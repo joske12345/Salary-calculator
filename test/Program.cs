@@ -13,7 +13,7 @@ class Employee
     public double HoursWorked { get; set; }
 
     // Constructor for the Employee class
-    public Employee(string name, double hourlyRate)
+    public Employee(string name)
     {
         Name = name;
         HourlyRate = 0;
@@ -73,11 +73,10 @@ class Program
         List<Employee> employees = new List<Employee>
 
         {
-            new Employee("Nendartalian", 0),
-            new Employee("Itty Bitty", 0),
-            new Employee("Chewbacca", 0)
+            new Employee("Nendartalian"),
+            new Employee("Itty Bitty"),
+            new Employee("Chewbacca")
         };
-
 
         for (int i = 0; i < employees.Count; i++)
         {
